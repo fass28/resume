@@ -4,7 +4,7 @@ import {
   PersonalInfo,
   MyResume,
   MyPortfolio,
-  ContactMe,
+  Footer,
 } from './assets/Components'
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
       <PersonalInfo />
       <MyResume />
       <MyPortfolio />
-      <ContactMe />
+      <Footer />
     </>
   )
 }

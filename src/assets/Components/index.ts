@@ -3,6 +3,6 @@ import { NavBar } from './NavBar/NavBar'
 import { PersonalInfo } from './PersonalInfo/PersonalInfo'
 import { MyResume } from './MyResume/MyResume'
 import { MyPortfolio } from './MyPortfolio/MyPortfolio'
-import { ContactMe } from './ContactMe/ContactMe'
+import { Footer } from './Footer/Footer'
 
-export { Header, NavBar, PersonalInfo, MyResume, MyPortfolio, ContactMe }
+export { Header, NavBar, PersonalInfo, MyResume, MyPortfolio, Footer }

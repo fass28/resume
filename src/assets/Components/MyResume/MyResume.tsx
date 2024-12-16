@@ -192,8 +192,8 @@ export const MyResume = () => {
                   </div>
                 </div>
                 <div className='col-7 text-left py-3'>
-                  <h1 className='text-danger font-weight-bold font40'>...</h1>
-                  <p className='text-light mb-1'>Be the first client!</p>
+                  <h1 className='text-danger font-weight-bold font40'>1</h1>
+                  <p className='text-light mb-1'> Clients</p>
                 </div>
               </div>
             </div>

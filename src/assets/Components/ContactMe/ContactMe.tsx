@@ -56,7 +56,7 @@ export const ContactMe = () => {
                 <div className='col-10 '>
                   <h6 className='d-inline'>
                     Phone : <br />{' '}
-                    <span className='text-muted'>+ (123) 456-789</span>
+                    <span className='text-muted'>+ (51) 917325863</span>
                   </h6>
                 </div>
               </div>
@@ -67,9 +67,7 @@ export const ContactMe = () => {
                 <div className='col-10'>
                   <h6 className='d-inline'>
                     Address :<br />{' '}
-                    <span className='text-muted'>
-                      12345 Fake ST NoWhere AB Country.
-                    </span>
+                    <span className='text-muted'>Peru - LimA - Lima.</span>
                   </h6>
                 </div>
               </div>
@@ -80,7 +78,10 @@ export const ContactMe = () => {
                 <div className='col-10'>
                   <h6 className='d-inline'>
                     Email :<br />{' '}
-                    <span className='text-muted'>info@website.com</span>
+                    <span className='text-muted'>
+                      {' '}
+                      freddy.saavedra2807@gmail.com
+                    </span>
                   </h6>
                 </div>
               </div>
