@@ -11210,6 +11210,10 @@ p {
   color: #fff;
 }
 
+.portfolio-container{
+  display: flex;
+}
+
 .portfolio .portfolio-container .portfolio-item {
   position: relative;
   padding-left: 0;
@@ -11506,13 +11510,14 @@ pre .code {
   position: relative;
   height: 80vh;
   min-height: 600px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/src/assets/img/developer.png);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url(/src/assets/img/developer.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
+  background-color: red;
 }
 
 .header .container {

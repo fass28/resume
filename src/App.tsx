@@ -1,4 +1,11 @@
-import { Header, NavBar, PersonalInfo, MyResume } from './assets/Components'
+import {
+  Header,
+  NavBar,
+  PersonalInfo,
+  MyResume,
+  MyPortfolio,
+  ContactMe,
+} from './assets/Components'
 
 const App = () => {
   return (
@@ -7,6 +14,8 @@ const App = () => {
       <NavBar />
       <PersonalInfo />
       <MyResume />
+      <MyPortfolio />
+      <ContactMe />
     </>
   )
 }

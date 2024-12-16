@@ -1,4 +1,4 @@
-import img1 from '../../../assets/img/avatar.jpg'
+import avatar from '../../../assets/img/avatar.jpg'
 import '../../../App.css'
 import '../../../index.css'
 
@@ -43,7 +43,7 @@ export const NavBar = () => {
             </li>
           </ul>
           <ul className='navbar-nav brand'>
-            <img src={img1} alt='' className='brand-img' />
+            <img src={avatar} alt='' className='brand-img' />
             <li className='brand-txt'>
               <h5 className='brand-title'>John Doe</h5>
               <div className='brand-subtitle'>Web Designer | Developer</div>

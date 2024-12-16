@@ -3,7 +3,7 @@ import '../../../index.css'
 
 export const Header = () => {
   return (
-    <header>
+    <header className='header'>
       <div className='container'>
         <ul className='social-icons pt-3'>
           <li className='social-item'>
