@@ -1,44 +1,48 @@
 import '../../../App.css'
 import '../../../index.css'
+import { useTranslation } from 'react-i18next'
 
 export const PersonalInfo = () => {
+  const { t: translate } = useTranslation()
   return (
     <div className='container-fluid'>
       <div id='about' className='row about-section'>
         <div className='col-lg-4 about-card'>
-          <h3 className='font-weight-light'>Who am I ?</h3>
+          <h3 className='font-weight-light'>
+            {translate('personal_info:description.title')}
+          </h3>
           <span className='line mb-5'></span>
-          <h5 className='mb-3'>A Web Developer | Located In Lima - Peru</h5>
-          <p className='mt-20'>
-            I am a Mechatronics Engineer transitioning into web development,
-            driven by a strong enthusiasm to establish a career in this field. I
-            am eager to enhance my programming skills, contribute to innovative
-            technologies, and grow as a professional in the tech industry.
-          </p>
+          <h5 className='mb-3'>
+            {translate('personal_info:description.subtitle')}
+          </h5>
+          <p className='mt-20'>{translate('personal_info:description.text')}</p>
           <button className='btn btn-outline-danger'>
-            <i className='icon-down-circled2 '></i>Download My CV
+            <i className='icon-down-circled2 '></i>
+            {translate('personal_info:description.button')}
           </button>
         </div>
         <div className='col-lg-4 about-card'>
-          <h3 className='font-weight-light'>Personal Info</h3>
+          <h3 className='font-weight-light'>
+            {translate('personal_info:my_info.title')}
+          </h3>
           <span className='line mb-5'></span>
           <ul className='mt40 info list-unstyled'>
             <li>
-              <span>Birthdate</span>
-              <span className='info-data'>: 28/07/1993</span>
+              <span>{translate('personal_info:my_info.age')}</span>
             </li>
             <li>
-              <span>Email</span>
-              <span className='info-data'>: freddy.saavedra2807@gmail.com</span>
-            </li>
-            <li>
-              <span>Phone</span>
-              <span className='info-data'>: + (51) 917325863</span>
-            </li>
-            <li>
-              <span>Address</span>
               <span className='info-data'>
-                : Peru - Lima - Lima - Carabayllo
+                {translate('personal_info:my_info.email')}
+              </span>
+            </li>
+            <li>
+              <span className='info-data'>
+                {translate('personal_info:my_info.phone')}
+              </span>
+            </li>
+            <li>
+              <span className='info-data'>
+                {translate('personal_info:my_info.address')}
               </span>
             </li>
           </ul>
@@ -71,16 +75,18 @@ export const PersonalInfo = () => {
           </ul>
         </div>
         <div className='col-lg-4 about-card'>
-          <h3 className='font-weight-light'>What I Offer</h3>
+          <h3 className='font-weight-light'>
+            {translate('personal_info:skills.title')}
+          </h3>
           <span className='line mb-5'></span>
           <div className='row'>
             <div className='col-1 text-danger pt-1'>
               <i className='ti-paint-bucket icon-lg'></i>
             </div>
             <div className='col-10 ml-auto mr-3'>
-              <h6>Web Development</h6>
+              <h6>{translate('personal_info:skills.subtitle')}</h6>
               <p className='subtitle'>
-                Build, Maintenance, Update and Best Practices.
+                {translate('personal_info:skills.text')}
               </p>
               <hr />
             </div>
