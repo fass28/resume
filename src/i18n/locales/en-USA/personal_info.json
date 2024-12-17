@@ -1,0 +1,20 @@
+{
+  "description": {
+    "title": "Who am I ?",
+    "subtitle": "A Web Developer | Located In Lima - Peru",
+    "text": "I am a Mechatronics Engineer transitioning into web development, driven by a strong enthusiasm to establish a career in this field. I am eager to enhance my programming skills, contribute to innovative technologies, and grow as a professional in the tech industry.",
+    "button": "Download My CV"
+  },
+  "my_info": {
+    "title": "Personal Information",
+    "age": "Age: 31 years old",
+    "email": "Email: freddy.saavedra2807@gmail.com",
+    "phone": "Phone: + (51) 917 325 863",
+    "address": "Address: Lima, Peru"
+  },
+  "skills": {
+    "title": "What I Offer",
+    "subtitle": "Web Development",
+    "text": "Build, Maintenance, Update and Best Practices."
+  }
+}

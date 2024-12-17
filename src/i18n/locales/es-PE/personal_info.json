@@ -1,0 +1,20 @@
+{
+  "description": {
+    "title": "Quien soy ?",
+    "subtitle": "Un Desarrollador Web Fronted | Ubicado en Lima - Peru",
+    "text": "Soy ingeniero en mecatrónica y estoy en transición al desarrollo web, motivado por un gran entusiasmo por establecer una carrera en este campo. Estoy ansioso por mejorar mis habilidades de programación, contribuir a tecnologías innovadoras y crecer como profesional en la industria tecnológica.",
+    "button": "Descarga Mi CV"
+  },
+  "my_info": {
+    "title": "Informacion Personal",
+    "age": "Edad: 31 años",
+    "email": "Correo: freddy.saavedra2807@gmail.com",
+    "phone": "Phone: + (51) 917 325 863",
+    "address": "Address: Lima, Peru"
+  },
+  "skills": {
+    "title": "Que Ofrezco",
+    "subtitle": "Desarrollo Web",
+    "text": "Construcción, Mantenimiento, Actualización y best practices en codigo."
+  }
+}
