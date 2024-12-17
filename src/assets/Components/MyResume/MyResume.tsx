@@ -1,11 +1,12 @@
+import { useTranslation } from 'react-i18next'
+
 export const MyResume = () => {
+  const { t: translate } = useTranslation()
   return (
     <>
       <section className='section' id='resume'>
         <div className='container'>
-          <h2 className='mb-5'>
-            <span className='text-danger'>My</span> Resume
-          </h2>
+          <h2 className='mb-5'>{translate('my_resume:title')}</h2>
           <div className='row'>
             <div className='col-md-6 col-lg-4'>
               <div className='card'>
@@ -16,12 +17,12 @@ export const MyResume = () => {
                   </div>
                 </div>
                 <div className='card-body'>
-                  <h6 className='title text-danger'>2017 - Present</h6>
+                  <h6 className='title text-danger'>
+                    {translate('my_resume:expertise.experience_1.year')}
+                  </h6>
                   <p>UX Developer</p>
                   <p className='subtitle'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nostrum recusandae, cupiditate ullam dolor ratione
-                    repellendus.aliquid repudiandae saepe!.
+                    {translate('my_resume:expertise.experience_1.text')}
                   </p>
                   <hr />
                   <h6 className='title text-danger'>2016 - 2017</h6>
@@ -46,35 +47,33 @@ export const MyResume = () => {
               <div className='card'>
                 <div className='card-header'>
                   <div className='mt-2'>
-                    <h4>Education</h4>
+                    <h4> {translate('my_resume:education.title')}</h4>
                     <span className='line'></span>
                   </div>
                 </div>
                 <div className='card-body'>
-                  <h6 className='title text-danger'>2024 - Present</h6>
-                  <p>Website Developer</p>
+                  <h6 className='title text-danger'>
+                    {translate('my_resume:education.degree_1.year')}
+                  </h6>
+                  <p>{translate('my_resume:education.degree_1.position')}</p>
                   <p className='subtitle'>
-                    I have completed courses on Udemy and Platzi focused on web
-                    development with React, working on projects using JavaScript
-                    and TypeScript. I have experience with styling frameworks
-                    such as Tailwind, Bootstrap, and Emotion Styled, as well as
-                    making API calls with Axios, GraphQL, and Fetch
+                    {translate('my_resume:education.degree_1.text')}
                   </p>
                   <hr />
-                  <h6 className='title text-danger'>2013 - 2019</h6>
-                  <p>Mecatronic Engineer</p>
+                  <h6 className='title text-danger'>
+                    {translate('my_resume:education.degree_2.year')}
+                  </h6>
+                  <p> {translate('my_resume:education.degree_2.position')}</p>
                   <p className='subtitle'>
-                    Project leader in industrial plant automation,
-                    microcontroller programming, and development of control
-                    screens, processes, and data distribution systems.
+                    {translate('my_resume:education.degree_2.text')}
                   </p>
                   <hr />
-                  <h6 className='title text-danger'>2009 - 2013</h6>
-                  <p>Process Controll technician</p>
+                  <h6 className='title text-danger'>
+                    {translate('my_resume:education.degree_3.year')}
+                  </h6>
+                  <p>{translate('my_resume:education.degree_3.position')}</p>
                   <p className='subtitle'>
-                    Industrial plant maintenance technician, performing machine
-                    maintenance tasks and resolving issues with immediate
-                    'hotfix' solutions.
+                    {translate('my_resume:education.degree_3.text')}
                   </p>
                 </div>
               </div>

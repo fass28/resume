@@ -1,0 +1,28 @@
+{
+  "title": "My Resume",
+  "expertise": {
+    "title": "Expertise",
+    "experience_1": {
+      "year": "2024 - Present",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepse!."
+    }
+  },
+  "education": {
+    "title": "Education",
+    "degree_1": {
+      "year": "2024 - Present",
+      "position": "Web Developer",
+      "text": "I have completed courses on Udemy and Platzi focused on web development with React, working on projects using JavaScript and TypeScript. I have experience with styling frameworks such as Tailwind, Bootstrap, and Emotion Styled, as well as making API calls with Axios, GraphQL, and Fetch."
+    },
+    "degree_2": {
+      "year": "2013 - 2019",
+      "position": "Mecatronic Engineer",
+      "text": "Project leader in industrial plant automation, microcontroller programming, and development of control screens, processes, and data distribution systems."
+    },
+    "degree_3": {
+      "year": "2009 - 2013",
+      "position": "Process Controll technician",
+      "text": "Project leader in industrial plant automation, microcontroller programming, and development of control screens, processes, and data distribution systems."
+    }
+  }
+}
