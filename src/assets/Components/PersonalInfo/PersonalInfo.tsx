@@ -24,16 +24,22 @@ export const PersonalInfo = () => {
           <span className='line mb-5'></span>
           <ul className='mt40 info list-unstyled'>
             <li>
-              <span>Birthdate</span> : 28/07/1993
+              <span>Birthdate</span>
+              <span className='info-data'>: 28/07/1993</span>
             </li>
             <li>
-              <span>Email</span> : freddy.saavedra2807@gmail.com
+              <span>Email</span>
+              <span className='info-data'>: freddy.saavedra2807@gmail.com</span>
             </li>
             <li>
-              <span>Phone</span> : + (51) 917325863
+              <span>Phone</span>
+              <span className='info-data'>: + (51) 917325863</span>
             </li>
             <li>
-              <span>Address</span> : Peru - Lima - Lima - Carabayllo
+              <span>Address</span>
+              <span className='info-data'>
+                : Peru - Lima - Lima - Carabayllo
+              </span>
             </li>
           </ul>
           <ul className='social-icons pt-3'>

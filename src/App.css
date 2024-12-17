@@ -72,6 +72,13 @@ body {
   background-color: #fff;
 }
 
+.dark-mode {
+  background-color: #343a40;
+  color: #fff;
+}
+
+
+
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
@@ -5056,8 +5063,8 @@ input[type="button"].btn-block {
           flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
+/*   background-color: #fff;
+ */  background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0;
 }
@@ -10988,8 +10995,11 @@ p {
 }
 
 .info {
-  color: #6c757d;
   font-size: 14px;
+}
+
+.info-data {
+  color:inherit;
 }
 
 .info li {
@@ -10999,7 +11009,6 @@ p {
 .info span {
   font-weight: 600;
   font-size: 14px;
-  color: #343a40;
 }
 
 .line {
@@ -11085,7 +11094,6 @@ p {
 
 .card .card-body {
   font-size: 14px;
-  color: #6c757d;
 }
 
 .price-card {
@@ -11625,6 +11633,12 @@ pre .code {
   border-right: none;
 }
 
+p {
+  color: inherit
+}
+
+
+
 .contact {
   position: relative;
   min-height: 700px;
@@ -11687,3 +11701,4 @@ pre .code {
   display: block;
   margin-top: 10px;
 }
+
