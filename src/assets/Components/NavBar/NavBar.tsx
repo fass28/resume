@@ -1,8 +1,10 @@
 import avatar from '../../../assets/img/avatar.jpg'
 import '../../../App.css'
 import '../../../index.css'
+import { useTranslation } from 'react-i18next'
 
 export const NavBar = () => {
+  const { t: translate } = useTranslation()
   return (
     <nav
       className='navbar sticky-top navbar-expand-lg navbar-light bg-white'
@@ -28,41 +30,33 @@ export const NavBar = () => {
           <ul className='navbar-nav mr-auto'>
             <li className='nav-item'>
               <a href='#home' className='nav-link'>
-                Home
+                {translate('navbar:home')}
               </a>
             </li>
             <li className='nav-item'>
               <a href='#about' className='nav-link'>
-                About
+                {translate('navbar:about')}
               </a>
             </li>
             <li className='nav-item'>
               <a href='#resume' className='nav-link'>
-                Resume
+                {translate('navbar:resume')}
               </a>
             </li>
           </ul>
           <ul className='navbar-nav brand'>
             <img src={avatar} alt='' className='brand-img' />
             <li className='brand-txt'>
-              <h5 className='brand-title'>John Doe</h5>
-              <div className='brand-subtitle'>Web Designer | Developer</div>
+              <h5 className='brand-title'> {translate('navbar:title')}</h5>
+              <div className='brand-subtitle'>
+                {translate('navbar:subtitle')}
+              </div>
             </li>
           </ul>
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item'>
               <a href='#portfolio' className='nav-link'>
-                Portfolio
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a href='#blog' className='nav-link'>
-                Blog
-              </a>
-            </li>
-            <li className='nav-item last-item'>
-              <a href='#contact' className='nav-link'>
-                Contact
+                {translate('navbar:portfolio')}
               </a>
             </li>
           </ul>
