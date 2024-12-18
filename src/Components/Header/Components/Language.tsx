@@ -3,7 +3,7 @@ import ToggleButton from '@mui/material/ToggleButton'
 import { useParams } from 'react-router-dom'
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup'
 import Avatar from '@mui/material/Avatar'
-import { usa_lng, esp_lng } from '../../../img'
+import { usa_lng, esp_lng } from '../../../assets/img'
 import { useState } from 'react'
 
 type LanguageProps = {

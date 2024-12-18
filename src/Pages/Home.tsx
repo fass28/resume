@@ -5,7 +5,7 @@ import {
   MyResume,
   MyPortfolio,
   Footer,
-} from '../assets/Components'
+} from '../Components'
 
 export const Home = () => {
   return (

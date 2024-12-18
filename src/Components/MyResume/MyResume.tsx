@@ -1,3 +1,6 @@
+import '../../App.css'
+import '../../index.css'
+
 import { useTranslation } from 'react-i18next'
 
 export const MyResume = () => {

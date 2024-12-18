@@ -1,6 +1,6 @@
-import avatar from '../../../assets/img/avatar.jpg'
-import '../../../App.css'
-import '../../../index.css'
+import avatar from '../../assets/img/avatar.jpg'
+import '../../App.css'
+import '../../index.css'
 import { useTranslation } from 'react-i18next'
 
 export const NavBar = () => {

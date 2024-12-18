@@ -1,5 +1,5 @@
-import '../../../App.css'
-import '../../../index.css'
+import '../../App.css'
+import '../../index.css'
 
 export const Footer = () => {
   return (

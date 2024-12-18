@@ -1,16 +1,17 @@
-import '../../../App.css'
-import '../../../index.css'
+import '../../App.css'
+import '../../index.css'
 import { Button } from '@mui/material'
 import { useState } from 'react'
-import { DarkModeSwitch, Language } from './Components/'
+import { DarkModeSwitch, Language } from './Components'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
-import i18next from '../../../i18n'
+import i18next from '../../i18n'
 
 export const Header = () => {
   const [darkMode, setDarkMode] = useState(false)
   const { t: translate } = useTranslation()
   const navigate = useNavigate()
+
   const handleDarkMode = () => {
     setDarkMode(!darkMode)
     const body = document.body
