@@ -56,11 +56,6 @@ export const NavBar = () => {
                   {translate('navbar:resume')}
                 </a>
               </li>
-              <li className='nav-item' onClick={closeNavbar}>
-                <a href='#portfolio' className='nav-link'>
-                  {translate('navbar:portfolio')}
-                </a>
-              </li>
             </ul>
             <ul className='navbar-nav brand' style={{ width: '100%' }}>
               <img src={avatar} alt='' className='brand-img' />
