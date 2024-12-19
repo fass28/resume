@@ -1,6 +1,11 @@
+import { useTranslation } from 'react-i18next'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
+import { Stack } from '@mui/material';
 import '../../App.css'
 import '../../index.css'
-import { useTranslation } from 'react-i18next'
 
 export const PersonalInfo = () => {
   const { t: translate } = useTranslation()
@@ -46,33 +51,11 @@ export const PersonalInfo = () => {
               </span>
             </li>
           </ul>
-          <ul className='social-icons pt-3'>
-            <li className='social-item'>
-              <a className='social-link' href='#'>
-                <i className='ti-facebook' aria-hidden='true'></i>
-              </a>
-            </li>
-            <li className='social-item'>
-              <a className='social-link' href='#'>
-                <i className='ti-twitter' aria-hidden='true'></i>
-              </a>
-            </li>
-            <li className='social-item'>
-              <a className='social-link' href='#'>
-                <i className='ti-google' aria-hidden='true'></i>
-              </a>
-            </li>
-            <li className='social-item'>
-              <a className='social-link' href='#'>
-                <i className='ti-instagram' aria-hidden='true'></i>
-              </a>
-            </li>
-            <li className='social-item'>
-              <a className='social-link' href='#'>
-                <i className='ti-github' aria-hidden='true'></i>
-              </a>
-            </li>
-          </ul>
+          <Stack direction='row' spacing={3} sx={{ padding: '10px' }}>
+            <LinkedInIcon />
+            <InstagramIcon />
+            <GitHubIcon />
+          </Stack>
         </div>
         <div className='col-lg-4 about-card'>
           <h3 className='font-weight-light'>
@@ -81,7 +64,7 @@ export const PersonalInfo = () => {
           <span className='line mb-5'></span>
           <div className='row'>
             <div className='col-1 text-danger pt-1'>
-              <i className='ti-paint-bucket icon-lg'></i>
+              <IntegrationInstructionsIcon />
             </div>
             <div className='col-10 ml-auto mr-3'>
               <h6>{translate('personal_info:skills.subtitle')}</h6>

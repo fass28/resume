@@ -1,21 +1,34 @@
 import '../../App.css'
 import '../../index.css'
-import { Button } from '@mui/material'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { Button, Stack } from '@mui/material'
 import { DarkModeSwitch, Language } from './Components'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import i18next from '../../i18n'
 
+
 export const Header = () => {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(true)
   const { t: translate } = useTranslation()
   const navigate = useNavigate()
 
+  useEffect(() => {
+    const body = document.body;
+    if (darkMode) {
+      body.classList.add('dark-mode');
+    } else {
+      body.classList.remove('dark-mode');
+    }
+  }, [darkMode]);
+
+
   const handleDarkMode = () => {
     setDarkMode(!darkMode)
-    const body = document.body
-    body.classList.toggle('dark-mode')
+
   }
 
   const handleChangeLanguage = (lng: string) => {
@@ -29,37 +42,14 @@ export const Header = () => {
   return (
     <header className='header'>
       <div className='container'>
-        <ul className='social-icons pt-3'>
-          <li className='social-item'>
-            <a className='social-link text-light' href='#'>
-              <i className='ti-facebook' aria-hidden='true'></i>
-            </a>
-          </li>
-          <li className='social-item'>
-            <a className='social-link text-light' href='#'>
-              <i className='ti-twitter' aria-hidden='true'></i>
-            </a>
-          </li>
-          <li className='social-item'>
-            <a className='social-link text-light' href='#'>
-              <i className='ti-google' aria-hidden='true'></i>
-            </a>
-          </li>
-          <li className='social-item'>
-            <a className='social-link text-light' href='#'>
-              <i className='ti-instagram' aria-hidden='true'></i>
-            </a>
-          </li>
-          <li className='social-item'>
-            <a className='social-link text-light' href='#'>
-              <i className='ti-github' aria-hidden='true'></i>
-            </a>
-          </li>
+        <Stack direction="row" spacing={3} sx={{ padding: '10px' }}>
+          <LinkedInIcon />
+          <InstagramIcon />
+          <GitHubIcon />
           <li
             style={{
               listStyle: 'none',
-              position: 'absolute',
-              right: '0',
+              position: 'relative',
             }}
           >
             <div
@@ -68,6 +58,9 @@ export const Header = () => {
                 outline: 'none',
                 display: 'flex',
                 gap: '100px',
+                position: 'fixed',
+                right: '0',
+                zIndex: 2000,
               }}
             >
               <Language handleRedirect={handleChangeLanguage} />
@@ -78,11 +71,11 @@ export const Header = () => {
                 }}
                 onClick={handleDarkMode}
               >
-                <DarkModeSwitch />
+                <DarkModeSwitch checked={darkMode} />
               </Button>
             </div>
           </li>
-        </ul>
+        </Stack>
         <div className='header-content'>
           <h4 className='header-subtitle'>{translate('header:title')}</h4>
           <h1 className='header-title'>{translate('header:name')}</h1>

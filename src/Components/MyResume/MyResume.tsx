@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next'
+import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
+import ConstructionIcon from '@mui/icons-material/Construction';
+import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
 import '../../App.css'
 import '../../index.css'
 
-import { useTranslation } from 'react-i18next'
 
 export const MyResume = () => {
   const { t: translate } = useTranslation()
@@ -157,19 +160,20 @@ export const MyResume = () => {
           </div>
         </div>
       </section>
-      <section className='section bg-dark text-center'>
+      <section className='bg-dark text-center' style={{ padding: '50px 0', border: '1px  solid white', borderLeft: 'none', borderRight: 'none' }}>
+
         <div className='container'>
           <div className='row text-center'>
             <div className='col-md-6 col-lg-4'>
               <div className='row '>
                 <div className='col-5 text-right text-light border-right py-3'>
                   <div className='m-auto'>
-                    <i className='ti-alarm-clock icon-xl'></i>
+                    <QueryBuilderIcon sx={{ fontSize: 60 }} />
                   </div>
                 </div>
                 <div className='col-7 text-left py-3'>
                   <h1 className='text-danger font-weight-bold font40'>+300</h1>
-                  <p className='text-light mb-1'>Hours Worked</p>
+                  <p className='text-light mb-1'>Hours Coding</p>
                 </div>
               </div>
             </div>
@@ -177,7 +181,7 @@ export const MyResume = () => {
               <div className='row'>
                 <div className='col-5 text-right text-light border-right py-3'>
                   <div className='m-auto'>
-                    <i className='ti-layers-alt icon-xl'></i>
+                    <ConstructionIcon sx={{ fontSize: 60 }} />
                   </div>
                 </div>
                 <div className='col-7 text-left py-3'>
@@ -190,7 +194,7 @@ export const MyResume = () => {
               <div className='row'>
                 <div className='col-5 text-right text-light border-right py-3'>
                   <div className='m-auto'>
-                    <i className='ti-face-smile icon-xl'></i>
+                    <PersonAddAlt1Icon sx={{ fontSize: 60 }} />
                   </div>
                 </div>
                 <div className='col-7 text-left py-3'>
@@ -201,7 +205,7 @@ export const MyResume = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section >
     </>
   )
 }

@@ -7,7 +7,7 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import CardActionArea from '@mui/material/CardActionArea'
-import { ReactIcon, TypeScriptIcon, EmotionIcon, GraphqlIcon, ApiIcon, TailwindIcon, BootstrapIcon, JavaScriptIcon } from './Components/Icons/'
+import { ReactIcon, TypeScriptIcon, EmotionIcon, GraphqlIcon, ApiIcon, TailwindIcon, BootstrapIcon, JavaScriptIcon } from './Components/Icons'
 import { ListItemIcon, ListIcon } from './MyPortolio'
 
 import {
@@ -31,44 +31,53 @@ export const MyPortfolio = () => {
           container
           columns={{ xs: 2, sm: 12, lg: 4, }}
           gap={3}
+          justifyContent={{ xs: 'center', sm: 'center', lg: 'center' }}
         >
           <Item sx={{ maxWidth: 345 }}>
-            <Card>
+            <Card sx={{ width: 300 }} >
               <CardActionArea>
-                <CardMedia
-                  component='img'
-                  height='200'
-                  image={page_marketplace}
-                  alt='page_pokemon'
-                  onClick={() => console.log('click')}
-                />
-                <CardContent>
-                  <Typography gutterBottom variant='h5' component='div'>
-                    Market-Place
-                  </Typography>
-                  <ListIcon>
-                    <ListItemIcon >
-                      <ReactIcon />
-                    </ListItemIcon>
-                    <ListItemIcon >
-                      <TypeScriptIcon />
-                    </ListItemIcon>
-                    <ListItemIcon >
-                      <EmotionIcon />
-                    </ListItemIcon>
-                    <ListItemIcon >
-                      <GraphqlIcon />
-                    </ListItemIcon>
-                    <ListItemIcon >
-                      <ApiIcon />
-                    </ListItemIcon>
-                  </ListIcon>
-                </CardContent>
+                <Link
+                  href=''
+                  target='_blank'
+                  rel='noreferrer'
+                  underline='none'
+                  sx={{ color: 'inherit', textDecoration: 'none' }}
+                >
+                  <CardMedia
+                    component='img'
+                    height='200'
+                    width='200'
+                    image={page_marketplace}
+                    alt='page_marketplace'
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant='h5' component='div'>
+                      Market-Place
+                    </Typography>
+                    <ListIcon>
+                      <ListItemIcon >
+                        <ReactIcon />
+                      </ListItemIcon>
+                      <ListItemIcon >
+                        <TypeScriptIcon />
+                      </ListItemIcon>
+                      <ListItemIcon >
+                        <EmotionIcon />
+                      </ListItemIcon>
+                      <ListItemIcon >
+                        <GraphqlIcon />
+                      </ListItemIcon>
+                      <ListItemIcon >
+                        <ApiIcon />
+                      </ListItemIcon>
+                    </ListIcon>
+                  </CardContent>
+                </Link>
               </CardActionArea>
             </Card>
           </Item>
           <Item sx={{ maxWidth: 345 }}>
-            <Card >
+            <Card sx={{ width: 300 }}>
               <CardActionArea>
                 <Link
                   href='https://inproymel.com/'
@@ -104,7 +113,7 @@ export const MyPortfolio = () => {
             </Card>
           </Item>
           <Item sx={{ maxWidth: 345 }}>
-            <Card >
+            <Card sx={{ width: 300 }}>
               <CardActionArea>
                 <Link
                   href='https://shopfass.netlify.app/'
@@ -143,7 +152,7 @@ export const MyPortfolio = () => {
             </Card>
           </Item>
           <Item sx={{ maxWidth: 345 }}>
-            <Card>
+            <Card sx={{ width: 300 }}>
               <CardActionArea>
                 <Link
                   href=''
@@ -179,7 +188,7 @@ export const MyPortfolio = () => {
             </Card>
           </Item>
           <Item sx={{ maxWidth: 345 }}>
-            <Card>
+            <Card sx={{ width: 300 }}>
               <CardActionArea>
                 <Link
                   href='https://freddy-resume.netlify.app/'
@@ -215,7 +224,7 @@ export const MyPortfolio = () => {
             </Card>
           </Item>
           <Item sx={{ maxWidth: 345 }}>
-            <Card>
+            <Card sx={{ width: 300 }}>
               <CardActionArea>
                 <Link
                   href='https://todo-app-react-axios.netlify.app'

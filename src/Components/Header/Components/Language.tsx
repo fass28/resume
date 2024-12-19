@@ -37,12 +37,9 @@ export const Language: React.FC<LanguageProps> = ({ handleRedirect }) => {
           value='en-USA'
           aria-label='en-USA'
           sx={{
+            filter: 'grayscale(100%)',
             '&.Mui-selected': {
-              backgroundColor: 'lightgreen',
-              color: 'white',
-              '&:hover': {
-                backgroundColor: 'green',
-              },
+              filter: 'grayscale(0%)',
             },
           }}
         >
@@ -52,12 +49,9 @@ export const Language: React.FC<LanguageProps> = ({ handleRedirect }) => {
           value='es-PE'
           aria-label='es-PE'
           sx={{
+            filter: 'grayscale(100%)',
             '&.Mui-selected': {
-              backgroundColor: 'lightgreen',
-              color: 'white',
-              '&:hover': {
-                backgroundColor: 'green',
-              },
+              filter: 'grayscale(0%)',
             },
           }}
         >
