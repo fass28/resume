@@ -18,7 +18,9 @@ export const MyResume = () => {
               <div className='card'>
                 <div className='card-header'>
                   <div className='mt-2'>
-                    <h4>Expertise</h4>
+                    <h4>
+                      {translate('my_resume:expertise.title')}
+                    </h4>
                     <span className='line'></span>
                   </div>
                 </div>
@@ -26,25 +28,23 @@ export const MyResume = () => {
                   <h6 className='title text-danger'>
                     {translate('my_resume:expertise.experience_1.year')}
                   </h6>
-                  <p>UX Developer</p>
                   <p className='subtitle'>
                     {translate('my_resume:expertise.experience_1.text')}
                   </p>
                   <hr />
-                  <h6 className='title text-danger'>2016 - 2017</h6>
-                  <p>Front-end Developer</p>
+                  <h6 className='title text-danger'>
+                    {translate('my_resume:expertise.experience_2.year')}
+                  </h6>
                   <p className='subtitle'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nostrum recusandae, cupiditate ullam dolor ratione
-                    repellendus.aliquid repudiandae saepe!.
+                    {translate('my_resume:expertise.experience_2.text')}
                   </p>
                   <hr />
-                  <h6 className='title text-danger'>2015 - 2016</h6>
-                  <p>UX Designer</p>
+                  <h6 className='title text-danger'>
+                    {translate('my_resume:expertise.experience_3.year')}
+
+                  </h6>
                   <p className='subtitle'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nostrum recusandae, cupiditate ullam dolor ratione
-                    repellendus.aliquid repudiandae saepe!.
+                    {translate('my_resume:expertise.experience_3.text')}
                   </p>
                 </div>
               </div>

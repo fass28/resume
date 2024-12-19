@@ -4,7 +4,15 @@
     "title": "Expertise",
     "experience_1": {
       "year": "2024 - Present",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepse!."
+      "text": "I specialize in front-end web development using modern technologies such as React, JavaScript, and TypeScript. I have hands-on experience creating responsive and user-friendly interfaces with styling frameworks like Tailwind, Bootstrap, and Emotion Styled. Additionally, I excel in integrating APIs using tools like Axios, GraphQL, and Fetch, ensuring seamless communication between front-end and back-end systems."
+    },
+    "experience_2": {
+      "year": "2013 - 2019",
+      "text": "As a Mechatronics Engineer, I have successfully managed large-scale projects focused on the integration of industrial microcontrollers. This involved upgrading control systems and processes while working under pressure and collaborating closely with clients to meet their needs and expectations. Additionally, I have designed automation and control interfaces screens for hydroelectric, oil & gas, and mining companies, ensuring efficient operation and seamless user interaction."
+    },
+    "experience_3": {
+      "year": "2009 - 2013",
+      "text": "Experienced in industrial plant maintenance, specializing in troubleshooting high-production machinery in real-time, performing preventive and corrective maintenance, and ensuring minimal downtime. Adept at working under pressure in collaboration with production supervisors to maintain efficiency and meet operational demands in fast-paced industrial environments."
     }
   },
   "education": {

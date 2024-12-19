@@ -1,10 +1,18 @@
 {
   "title": "Mi Curriculum",
   "expertise": {
-    "title": "Expertise",
+    "title": "Especialización",
     "experience_1": {
       "year": "2024 - Presente",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepess!."
+      "text": "Me especializo en el desarrollo de sitios web front-end utilizando tecnologías modernas como React, JavaScript y TypeScript. Tengo experiencia práctica en la creación de interfaces responsivas y fáciles de usar con marcos de diseño como Tailwind, Bootstrap y Emotion Styled. Además, me destaco en la integración de API mediante herramientas como Axios, GraphQL y Fetch, lo que garantiza una comunicación fluida entre los sistemas front-end y back-end."
+    },
+    "experience_2": {
+      "year": "2013 - 2019",
+      "text": "Como Ingeniero en Mecatrónica, he gestionado con éxito proyectos de gran escala centrados en la integración de microcontroladores industriales. Esto implicó actualizar los sistemas y procesos de control mientras trabajaba bajo presión y colaboraba estrechamente con los clientes para satisfacer sus necesidades y expectativas. Además, he diseñado pantallas de interfaces de automatización y control para empresas hidroeléctricas, de petróleo y gas y mineras, asegurando una operación eficiente y una interacción fluida con el usuario."
+    },
+    "experience_3": {
+      "year": "2009 - 2013",
+      "text": "Experiencia en mantenimiento de plantas industriales, especializándose en la resolución de problemas de maquinaria de alta producción en tiempo real, realizando mantenimiento preventivo y correctivo y garantizando un tiempo de inactividad mínimo. Experto en trabajar bajo presión en colaboración con supervisores de producción para mantener la eficiencia y satisfacer las demandas operativas en entornos industriales."
     }
   },
   "education": {
