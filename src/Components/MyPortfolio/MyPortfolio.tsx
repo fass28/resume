@@ -155,7 +155,7 @@ export const MyPortfolio = () => {
             <Card sx={{ width: 300 }}>
               <CardActionArea>
                 <Link
-                  href=''
+                  href='https://react-pokemon-game.netlify.app/'
                   target='_blank'
                   rel='noreferrer'
                   underline='none'
