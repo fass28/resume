@@ -2,8 +2,9 @@ import { useTranslation } from 'react-i18next'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import cv_download from '../../assets/download/DEV_FASS_CV.pdf'
 import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
-import { Stack } from '@mui/material';
+import { Link, Stack } from '@mui/material';
 import '../../App.css'
 import '../../index.css'
 
@@ -21,10 +22,12 @@ export const PersonalInfo = () => {
             {translate('personal_info:description.subtitle')}
           </h5>
           <p className='mt-20'>{translate('personal_info:description.text')}</p>
-          <button className='btn btn-outline-danger'>
-            <i className='icon-down-circled2 '></i>
-            {translate('personal_info:description.button')}
-          </button>
+          <a href={cv_download} download="Freddy_Saavedra_CV.pdf">
+            <button className='btn btn-outline-danger'>
+              <i className='icon-down-circled2 '></i>
+              {translate('personal_info:description.button')}
+            </button>
+          </a>
         </div>
         <div className='col-lg-4 about-card'>
           <h3 className='font-weight-light'>
@@ -52,9 +55,15 @@ export const PersonalInfo = () => {
             </li>
           </ul>
           <Stack direction='row' spacing={3} sx={{ padding: '10px' }}>
-            <LinkedInIcon />
-            <InstagramIcon />
-            <GitHubIcon />
+            <Link href='https://www.linkedin.com/in/freddy-saavedra-s/' target='_blank' underline='none' sx={{ color: 'inherit', textDecoration: 'none' }}>
+              <LinkedInIcon />
+            </Link>
+            <Link href='https://www.linkedin.com/in/freddy-saavedra-s/' target='_blank' underline='none' sx={{ color: 'inherit', textDecoration: 'none' }}>
+              <GitHubIcon />
+            </Link>
+            <Link href='https://www.linkedin.com/in/freddy-saavedra-s/' target='_blank' underline='none' sx={{ color: 'inherit', textDecoration: 'none' }}>
+              <InstagramIcon />
+            </Link>
           </Stack>
         </div>
         <div className='col-lg-4 about-card'>
@@ -62,7 +71,7 @@ export const PersonalInfo = () => {
             {translate('personal_info:skills.title')}
           </h3>
           <span className='line mb-5'></span>
-          <div className='row'>
+          <div className='col' style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center' }}>
             <div className='col-1 text-danger pt-1'>
               <IntegrationInstructionsIcon />
             </div>

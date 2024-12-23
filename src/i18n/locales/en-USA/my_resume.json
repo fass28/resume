@@ -32,5 +32,31 @@
       "position": "Process Controll technician",
       "text": "Project leader in industrial plant automation, microcontroller programming, and development of control screens, processes, and data distribution systems."
     }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "skill_1": "Html5 & Css3",
+    "skill_2": "TypeScript",
+    "skill_3": "React",
+    "skill_4": "Api Rest"
+  },
+  "languages": {
+    "title": "Languages",
+    "language_1": "Spanish",
+    "language_2": "English"
+  },
+  "stats": {
+    "coding": {
+      "quantity": "+300",
+      "text": "Hours of coding"
+    },
+    "projects": {
+      "quantity": "+10",
+      "text": "Projects completed"
+    },
+    "clients": {
+      "quantity": "1",
+      "text": "Happy clients"
+    }
   }
 }

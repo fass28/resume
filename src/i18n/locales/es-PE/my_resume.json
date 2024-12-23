@@ -32,5 +32,31 @@
       "position": "Process Controll technician",
       "text": "Técnico de mantenimiento de plantas industriales, realizando tareas de mantenimiento de máquinas y resolviendo problemas con soluciones inmediatas 'hotfix'."
     }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "skill_1": "Html5 & Css3",
+    "skill_2": "TypeScript",
+    "skill_3": "React",
+    "skill_4": "Api Rest"
+  },
+  "languages": {
+    "title": "Idiomas",
+    "language_1": "Español",
+    "language_2": "Inglés"
+  },
+  "stats": {
+    "coding": {
+      "quantity": "+300",
+      "text": "Horas de programación"
+    },
+    "projects": {
+      "quantity": "+10",
+      "text": "Proyectos completados"
+    },
+    "clients": {
+      "quantity": "1",
+      "text": "Clientes satisfechos"
+    }
   }
 }

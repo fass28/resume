@@ -88,12 +88,17 @@ export const MyResume = () => {
               <div className='card'>
                 <div className='card-header'>
                   <div className='pull-left'>
-                    <h4 className='mt-2'>Skills</h4>
+                    <h4 className='mt-2'>
+                      {translate('my_resume:skills.title')}
+
+                    </h4>
                     <span className='line'></span>
                   </div>
                 </div>
                 <div className='card-body pb-2'>
-                  <h6>hTL5 &amp; CSS3</h6>
+                  <h6>
+                    {translate('my_resume:skills.skill_1')}
+                  </h6>
                   <div className='progress mb-3'>
                     <div
                       className='progress-bar bg-danger'
@@ -104,7 +109,9 @@ export const MyResume = () => {
                       aria-valuemax={100}
                     ></div>
                   </div>
-                  <h6>JavaScript</h6>
+                  <h6>
+                    {translate('my_resume:skills.skill_2')}
+                  </h6>
                   <div className='progress mb-3'>
                     <div
                       className='progress-bar bg-danger'
@@ -112,7 +119,9 @@ export const MyResume = () => {
                       style={{ width: '85%' }}
                     ></div>
                   </div>
-                  <h6>TypeScript</h6>
+                  <h6>
+                    {translate('my_resume:skills.skill_3')}
+                  </h6>
                   <div className='progress mb-3'>
                     <div
                       className='progress-bar bg-danger'
@@ -120,7 +129,9 @@ export const MyResume = () => {
                       style={{ width: '60%' }}
                     ></div>
                   </div>
-                  <h6>API</h6>
+                  <h6>
+                    {translate('my_resume:skills.skill_4')}
+                  </h6>
                   <div className='progress mb-3'>
                     <div
                       className='progress-bar bg-danger'
@@ -133,12 +144,16 @@ export const MyResume = () => {
               <div className='card'>
                 <div className='card-header'>
                   <div className='pull-left'>
-                    <h4 className='mt-2'>Languages</h4>
+                    <h4 className='mt-2'>
+                      {translate('my_resume:languages.title')}
+                    </h4>
                     <span className='line'></span>
                   </div>
                 </div>
                 <div className='card-body pb-2'>
-                  <h6>English</h6>
+                  <h6>
+                    {translate('my_resume:languages.language_1')}
+                  </h6>
                   <div className='progress mb-3'>
                     <div
                       className='progress-bar bg-danger'
@@ -146,7 +161,9 @@ export const MyResume = () => {
                       style={{ width: '80%' }}
                     ></div>
                   </div>
-                  <h6>Spanish</h6>
+                  <h6>
+                    {translate('my_resume:languages.language_2')}
+                  </h6>
                   <div className='progress mb-3'>
                     <div
                       className='progress-bar bg-danger'
@@ -172,8 +189,12 @@ export const MyResume = () => {
                   </div>
                 </div>
                 <div className='col-7 text-left py-3'>
-                  <h1 className='text-danger font-weight-bold font40'>+300</h1>
-                  <p className='text-light mb-1'>Hours Coding</p>
+                  <h1 className='text-danger font-weight-bold font40'>
+                    {translate('my_resume:stats.coding.quantity')}
+                  </h1>
+                  <p className='text-light mb-1'>
+                    {translate('my_resume:stats.coding.text')}
+                  </p>
                 </div>
               </div>
             </div>
@@ -185,8 +206,12 @@ export const MyResume = () => {
                   </div>
                 </div>
                 <div className='col-7 text-left py-3'>
-                  <h1 className='text-danger font-weight-bold font40'>+10</h1>
-                  <p className='text-light mb-1'>Project Finished</p>
+                  <h1 className='text-danger font-weight-bold font40'>
+                    {translate('my_resume:stats.projects.quantity')}
+                  </h1>
+                  <p className='text-light mb-1'>
+                    {translate('my_resume:stats.projects.text')}
+                  </p>
                 </div>
               </div>
             </div>
@@ -198,8 +223,12 @@ export const MyResume = () => {
                   </div>
                 </div>
                 <div className='col-7 text-left py-3'>
-                  <h1 className='text-danger font-weight-bold font40'>1</h1>
-                  <p className='text-light mb-1'> Clients</p>
+                  <h1 className='text-danger font-weight-bold font40'>
+                    {translate('my_resume:stats.clients.quantity')}
+                  </h1>
+                  <p className='text-light mb-1'>
+                    {translate('my_resume:stats.clients.text')}
+                  </p>
                 </div>
               </div>
             </div>
